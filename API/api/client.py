@@ -7,7 +7,6 @@ from requests import Response, Session
 
 
 class ApiClient:
-    """Small wrapper around requests.Session for cleaner tests."""
 
     def __init__(self, base_url: str, timeout: int = 10) -> None:
         self.base_url = base_url.rstrip("/") + "/"
